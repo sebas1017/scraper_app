@@ -1,0 +1,27 @@
+{% block content %}
+    <form action="menu" method="POST">
+        <label for="ubicacion">ubicacion: </label>
+        <input type="text" id="ubicacion" name="ubicacion" /><br>
+
+
+        <label for="inmueble">Escoge el tipo de inmueble</label>
+        <select name="inmueble" id="inmueble">
+          <option value="Apartamento">Apartamento</option>
+          <option value="Lote">Lote</option>
+          <option value="Oficina">Oficina</option>
+          <option value="Casa">Casa</option>
+          <option value="Bodega">Bodega</option>
+        </select>
+
+
+
+
+        <label for="transaccion">Escoge el tipo de transaccion</label>
+  <select name="transaccion" id="transaccion">
+    <option value="En venta">En venta</option>
+    <option value="En arriendo">En arriendo</option>
+  </select>
+
+        <input type="submit" id="transaccion" name="transaccion" value="Enviar" />
+    </form>
+{% endblock %}
